@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Domain Name Sale</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+		}
+
+		h1 {
+			color: #00539c;
+			font-size: 36px;
+			font-weight: bold;
+			margin: 0 0 20px;
+			text-align: center;
+			text-transform: uppercase;
+		}
+
+		p {
+			color: #555;
+			font-size: 18px;
+			line-height: 1.5;
+			margin: 0 0 20px;
+		}
+
+		ul {
+			list-style: none;
+			padding: 0;
+			margin: 0 0 20px;
+		}
+
+		li {
+			color: #555;
+			font-size: 18px;
+			line-height: 1.5;
+			margin: 0 0 10px;
+		}
+
+		label {
+			color: #555;
+			display: block;
+			font-size: 18px;
+			font-weight: bold;
+			margin: 0 0 10px;
+		}
+
+		input[type="text"],
+		input[type="email"],
+		textarea {
+			border: 2px solid #00539c;
+			font-size: 16px;
+			padding: 10px;
+			width: 100%;
+		}
+
+		input[type="submit"] {
+			background-color: #00539c;
+			border: none;
+			color: #fff;
+			cursor: pointer;
+			font-size: 18px;
+			font-weight: bold;
+			padding: 10px;
+			text-transform: uppercase;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #00294c;
+		}
+	</style>
+	<script type="text/javascript">
+		window.onload = function() {
+			var domainName = window.location.hostname;
+			var domainNameElement = document.getElementById("domainName");
+			domainNameElement.innerHTML = domainName;
+		};
+	</script>
+</head>
+<body>
+	<div class="container">
+		<h1>Domain Name For Sale</h1>
+		<p>Thank you for your interest in <span id="domainName"></span>. We are currently offering it for sale.</p>
+		<ul>
+			<li>Asking Price: $XXXX</li>
+		</ul>
+		<p>If you are interested in purchasing this domain, please contact us using the form below:</p>
+		<form action="mailto:your@email.com" method="post">
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+
+			<label for="message">Message:</label>
+			<textarea id="message" name="message" required></textarea>
+
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+</body>
+</html>
